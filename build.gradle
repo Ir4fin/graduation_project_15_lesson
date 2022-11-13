@@ -56,43 +56,43 @@ tasks.withType(Test) {
     }
 }
 
-task properties_test(type: Test) {
+task simpleSearch_test(type: Test) {
     useJUnitPlatform{
         includeTags "simpleSearch"
     }
 }
 
-task form_test(type: Test) {
+task changeLanguage_test(type: Test) {
     useJUnitPlatform{
         includeTags "changeLanguage"
     }
 }
 
-task form_test(type: Test) {
+task checkValidationError_test(type: Test) {
     useJUnitPlatform{
         includeTags "checkValidationError"
     }
 }
 
-task form_test(type: Test) {
+task checkSupportButton_test(type: Test) {
     useJUnitPlatform{
         includeTags "checkSupportButton"
     }
 }
 
-task form_test(type: Test) {
+task checkContactWithoutLogin_test(type: Test) {
     useJUnitPlatform{
         includeTags "checkContactWithoutLogin"
     }
 }
 
-task form_test(type: Test) {
+task checkRegistrationRedirect_test(type: Test) {
     useJUnitPlatform{
         includeTags "checkRegistrationRedirect"
     }
 }
 
-task form_test(type: Test) {
+task checkSearchFromResult_test(type: Test) {
     useJUnitPlatform{
         includeTags "checkSearchFromResult"
     }
