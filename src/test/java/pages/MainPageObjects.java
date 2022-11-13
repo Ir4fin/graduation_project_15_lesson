@@ -28,7 +28,7 @@ public class MainPageObjects {
 
     @Step("Открываем главную страницу")
     public MainPageObjects openPage() {
-        open("index.html");
+        open("index.ru.html");
         $(".promo-section").shouldHave(text(TEXT_ON_MAIN_RU));
 
         return this;

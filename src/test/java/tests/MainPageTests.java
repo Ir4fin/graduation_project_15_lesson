@@ -19,6 +19,7 @@ public class MainPageTests extends TestBase {
     void PrepareTestData() {
     destinationName = faker.address().country();
     newDestination = faker.address().country();
+
     }
 
 
