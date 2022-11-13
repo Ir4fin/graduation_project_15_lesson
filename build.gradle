@@ -58,12 +58,44 @@ tasks.withType(Test) {
 
 task properties_test(type: Test) {
     useJUnitPlatform{
-        includeTags "properties"
+        includeTags "simpleSearch"
     }
 }
 
 task form_test(type: Test) {
     useJUnitPlatform{
-        includeTags "form"
+        includeTags "changeLanguage"
     }
 }
+
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "checkValidationError"
+    }
+}
+
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "checkSupportButton"
+    }
+}
+
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "checkContactWithoutLogin"
+    }
+}
+
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "checkRegistrationRedirect"
+    }
+}
+
+task form_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "checkSearchFromResult"
+    }
+}
+
+

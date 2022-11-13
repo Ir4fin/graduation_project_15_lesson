@@ -2,6 +2,7 @@ package tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPageObjects;
 
@@ -22,6 +23,7 @@ public class MainPageTests extends TestBase {
 
 
    @Test
+   @Tag("simpleSearch")
     void SimpleSearchFromMainPage() {
         mainPageObjects.openPage()
                 .putTextToInputOnMainPage(destinationName)
@@ -30,6 +32,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("changeLanguage")
     void ChangeLanguage() {
         mainPageObjects.openPage()
                 .changeLanguageModalIsAppear()
@@ -39,6 +42,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("checkValidationError")
     void CheckValidationIfInputIsEmpty() {
     mainPageObjects.openPage()
             .clickOnSearchButton()
@@ -46,6 +50,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("checkSupportButton")
     void CheckContactButtonWorks() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -53,6 +58,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("checkContactWithoutLogin")
     void CheckContactPageWithoutLogin() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -62,6 +68,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("checkRegistrationRedirect")
     void CheckThatRegistrationButtonRedirectToNewPage() {
         mainPageObjects.openPage()
                 .clickOnRegistrationButton()
@@ -69,6 +76,7 @@ public class MainPageTests extends TestBase {
     }
 
     @Test
+    @Tag("checkSearchFromResult")
     void SimpleSearchFromResultPage() {
        mainPageObjects.openPage()
                .putTextToInputOnMainPage(destinationName)
