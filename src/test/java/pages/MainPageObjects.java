@@ -21,7 +21,7 @@ public class MainPageObjects {
     private final static String TEXT_ON_MAIN_RU = "Спецпредложения";
     private final static String TEXT_ON_MAIN_ENG = "Offers";
     private final static String TEXT_ON_REGISTRATION_RU = "Войдите или создайте аккаунт";
-    private final static String TEXT_ON_SEARCH_RU = "найдено";
+    private final static String TEXT_ON_SEARCH_RU = "Результаты поиска";
     private final static String ERROR_MESSAGE_RU = "Чтобы начать поиск, введите направление.";
     private final static String TEXT_ON_SUPPORT_PAGE_RU = "Добро пожаловать в Центр поддержки";
     private final static String BOOKING_DETAIL_INPUT_ON_SUPPORT_PAGE_RU = "Ввод деталей бронирования";
@@ -52,7 +52,7 @@ public class MainPageObjects {
     @Step("Проверяем, что открылась страница с результатам поиска")
     public MainPageObjects checkResult() {
         $("#searchresultsTmpl").should(appear);
-        $(".efdb2b543b").shouldHave(text(TEXT_ON_SEARCH_RU));
+        $("#breadcrumbs").shouldHave(text(TEXT_ON_SEARCH_RU));
 
         return this;
     }
