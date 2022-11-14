@@ -52,7 +52,7 @@ public class MainPageObjects {
     @Step("Проверяем, что открылась страница с результатам поиска")
     public MainPageObjects checkResult() {
         $("#searchresultsTmpl").should(appear);
-        $("#breadcrumbs").shouldHave(text(TEXT_ON_SEARCH_RU));
+        $("a[aria-current='location']").shouldHave(text(TEXT_ON_SEARCH_RU));
 
         return this;
     }
