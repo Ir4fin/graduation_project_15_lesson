@@ -8,7 +8,7 @@
 ## Стек проекта
 
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/Intelij_IDEA.svg">
+<img width="6%" title="IntelliJ IDEA" src="Images/Intelij_IDEA.svg">
 <img width="6%" title="Java" src="images/Java.svg">
 <img width="6%" title="Selenide" src="images/Selenide.svg">
 <img width="6%" title="Selenoid" src="images/Selenoid.svg">
