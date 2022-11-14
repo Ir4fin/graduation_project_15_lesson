@@ -25,6 +25,7 @@ public class MainPageTests extends TestBase {
 
    @Test
    @Tag("simpleSearch")
+   @Tag("MainPageTests")
     void SimpleSearchFromMainPage() {
         mainPageObjects.openPage()
                 .putTextToInputOnMainPage(destinationName)
@@ -34,6 +35,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("changeLanguage")
+    @Tag("MainPageTests")
     void ChangeLanguage() {
         mainPageObjects.openPage()
                 .changeLanguageModalIsAppear()
@@ -44,6 +46,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("checkValidationError")
+    @Tag("MainPageTests")
     void CheckValidationIfInputIsEmpty() {
     mainPageObjects.openPage()
             .clickOnSearchButton()
@@ -52,6 +55,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("checkSupportButton")
+    @Tag("MainPageTests")
     void CheckContactButtonWorks() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -60,6 +64,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("checkContactWithoutLogin")
+    @Tag("MainPageTests")
     void CheckContactPageWithoutLogin() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -70,6 +75,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("checkRegistrationRedirect")
+    @Tag("MainPageTests")
     void CheckThatRegistrationButtonRedirectToNewPage() {
         mainPageObjects.openPage()
                 .clickOnRegistrationButton()
@@ -78,6 +84,7 @@ public class MainPageTests extends TestBase {
 
     @Test
     @Tag("checkSearchFromResult")
+    @Tag("MainPageTests")
     void SimpleSearchFromResultPage() {
        mainPageObjects.openPage()
                .putTextToInputOnMainPage(destinationName)
