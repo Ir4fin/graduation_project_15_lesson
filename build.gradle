@@ -98,7 +98,7 @@ task checkSearchFromResult_test(type: Test) {
     }
 }
 
-task MainPageTests(type: Test) {
+task MainPageTests_test(type: Test) {
     useJUnitPlatform{
         includeTags "MainPageTests"
     }
