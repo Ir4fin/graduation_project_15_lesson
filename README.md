@@ -54,7 +54,7 @@ gradle clean MainPageTests_test
 
 **Jenkins**
 
-Для проекта сделана сборка в Jenkins со следующими параметрами:
+Для проекта сделана [сборка в Jenkins](https://jenkins.autotests.cloud/job/014-Ir4fin-graduation_project_15_lesson/) со следующими параметрами:
 
 ```bash
 clean
