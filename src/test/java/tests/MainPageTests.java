@@ -2,6 +2,7 @@ package tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPageObjects;
@@ -26,6 +27,7 @@ public class MainPageTests extends TestBase {
    @Test
    @Tag("simpleSearch")
    @Tag("MainPageTests")
+   @DisplayName("Поиск с главной страницы без заданных дат")
     void SimpleSearchFromMainPage() {
         mainPageObjects.openPage()
                 .putTextToInputOnMainPage(destinationName)
@@ -36,6 +38,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("changeLanguage")
     @Tag("MainPageTests")
+    @DisplayName("Проверка функционала по смене языка")
     void ChangeLanguage() {
         mainPageObjects.openPage()
                 .changeLanguageModalIsAppear()
@@ -47,6 +50,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("checkValidationError")
     @Tag("MainPageTests")
+    @DisplayName("Проверка наличия ошибки валидации на форме ввода")
     void CheckValidationIfInputIsEmpty() {
     mainPageObjects.openPage()
             .clickOnSearchButton()
@@ -56,6 +60,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("checkSupportButton")
     @Tag("MainPageTests")
+    @DisplayName("Проверка срабатывания кнопки обратной связи")
     void CheckContactButtonWorks() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -65,6 +70,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("checkContactWithoutLogin")
     @Tag("MainPageTests")
+    @DisplayName("Проверка функционала отправления заявки на обратную связь без совершенного логина в систему")
     void CheckContactPageWithoutLogin() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
@@ -76,6 +82,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("checkRegistrationRedirect")
     @Tag("MainPageTests")
+    @DisplayName("Проверка срабатывания кнопки регистрации")
     void CheckThatRegistrationButtonRedirectToNewPage() {
         mainPageObjects.openPage()
                 .clickOnRegistrationButton()
@@ -85,6 +92,7 @@ public class MainPageTests extends TestBase {
     @Test
     @Tag("checkSearchFromResult")
     @Tag("MainPageTests")
+    @DisplayName("Проверка поиска нового места назначения со страницы с результатами для другого поиска")
     void SimpleSearchFromResultPage() {
        mainPageObjects.openPage()
                .putTextToInputOnMainPage(destinationName)
