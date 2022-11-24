@@ -19,6 +19,7 @@
 <img width="6%" title="GitHub" src="images/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/Jenkins.svg">
 <img width="6%" title="Telegram" src="images/Telegram.svg">
+<img width="6%" title="Telegram" src="images/Allure_TO.svg"> 
 </p>
 
 ## ▶️ Текущее тестовое покрытие
@@ -77,6 +78,17 @@ ${TASK_NAME}
 
 Для запуска прогона необходимо нажать на "Собрать с параметрами", выставить необходимые параметры и нажать "Собрать"
 
+![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_6.jpg)
+
+![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_7.jpg)
+
+## :keyboard: Проект в Allure TestOps
+
+Проект развернут также в Allure TestOps, что позволяет: отслеживать прогон тестов в реальном времени; автоматически добавлять тесты из прогона в тест-кейсы; адаптировать прогоны для того, чтобы их могли разбирать и запускать участники проекта, не связанные напрямую с автотестированием.
+
+![This is an image]((https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_9.jpg))
+
+![This is an image]((https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_10.jpg))
 
 
 ## 📊 Пример Allure-отчета по пройденным тестам
@@ -91,7 +103,7 @@ ${TASK_NAME}
 
 К проекту подключены уведомления в Telegram - после прохождения тестов в Jenkins бот присылает в чат результаты прогона.
 
-![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_2.jpg)
+![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_8.jpg)
 
 
 
