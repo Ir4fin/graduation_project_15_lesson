@@ -103,7 +103,7 @@ ${TASK_NAME}
 
 ## :clapper: Пример видео из Allure отчёта
 
-[This is a gif](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/02770fab6401b0919bc8e10cc0771d47.gif)
+![](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/02770fab6401b0919bc8e10cc0771d47.gif)
 
 ## :telephone_receiver: Уведомления
 
