@@ -16,8 +16,8 @@ public class TestBase {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        if (System.getProperty("selenide_remote") != null) {
-            Configuration.remote = System.getProperty("selenide_remote");
+        if (System.getProperty("selenide.remote") != null) {
+            Configuration.remote = System.getProperty("selenide.remote");
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
         }
@@ -35,7 +35,7 @@ public class TestBase {
         Attach.screenshotAs("Result screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        if (System.getProperty("selenide_remote") != null) {
+        if (System.getProperty("selenide.remote") != null) {
             Attach.addVideo();
         }
     }
