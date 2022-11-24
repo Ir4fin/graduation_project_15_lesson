@@ -21,7 +21,7 @@
 <img width="6%" title="GitHub" src="images/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/Jenkins.svg">
 <img width="6%" title="Telegram" src="images/Telegram.svg">
-<img width="6%" title="Telegram" src="images/Allure_TO.svg"> 
+<img width="6%" title="Allure_TO" src="images/Allure_TO.svg"> 
 </p>
 
 ## ▶️ Текущее тестовое покрытие
