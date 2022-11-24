@@ -8,16 +8,16 @@
 ## Стек проекта
 
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="Images/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="Images/Java.svg">
-<img width="6%" title="Selenide" src="Images/Selenide.svg">
-<img width="6%" title="Selenoid" src="Images/Selenoid.svg">
-<img width="6%" title="Allure Report" src="Images/Allure_Report.svg">
-<img width="6%" title="Gradle" src="Images/Gradle.svg">
-<img width="6%" title="JUnit5" src="Images/JUnit5.svg">
-<img width="6%" title="GitHub" src="Images/GitHub.svg">
-<img width="6%" title="Jenkins" src="Images/Jenkins.svg">
-<img width="6%" title="Telegram" src="Images/Telegram.svg">
+<img width="6%" title="IntelliJ IDEA" src="images/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="images/Java.svg">
+<img width="6%" title="Selenide" src="images/Selenide.svg">
+<img width="6%" title="Selenoid" src="images/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/Allure_Report.svg">
+<img width="6%" title="Gradle" src="images/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/JUnit5.svg">
+<img width="6%" title="GitHub" src="images/GitHub.svg">
+<img width="6%" title="Jenkins" src="images/Jenkins.svg">
+<img width="6%" title="Telegram" src="images/Telegram.svg">
 </p>
 
 ## :arrow_forward: Текущее тестовое покрытие

@@ -35,7 +35,7 @@ public class TestBase {
         Attach.screenshotAs("Result screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
-        if (System.getProperty("selenide.remote") != null) {
+        if (System.getProperty("selenide_remote") != null) {
             Attach.addVideo();
         }
     }

@@ -17,7 +17,7 @@ public class MainPageTests extends TestBase {
     newDestination;
 
     @BeforeEach
-    void PrepareTestData() {
+    void prepareTestData() {
     destinationName = faker.address().country();
     newDestination = faker.address().country();
 
@@ -28,7 +28,7 @@ public class MainPageTests extends TestBase {
    @Tag("simpleSearch")
    @Tag("MainPageTests")
    @DisplayName("Поиск с главной страницы без заданных дат")
-    void SimpleSearchFromMainPage() {
+    void simpleSearchFromMainPage() {
         mainPageObjects.openPage()
                 .putTextToInputOnMainPage(destinationName)
                 .clickOnSearchButton()
@@ -39,7 +39,7 @@ public class MainPageTests extends TestBase {
     @Tag("changeLanguage")
     @Tag("MainPageTests")
     @DisplayName("Проверка функционала по смене языка")
-    void ChangeLanguage() {
+    void changeLanguage() {
         mainPageObjects.openPage()
                 .changeLanguageModalIsAppear()
                 .setAnotherLanguage("Deutsch")
@@ -51,7 +51,7 @@ public class MainPageTests extends TestBase {
     @Tag("checkValidationError")
     @Tag("MainPageTests")
     @DisplayName("Проверка наличия ошибки валидации на форме ввода")
-    void CheckValidationIfInputIsEmpty() {
+    void checkValidationIfInputIsEmpty() {
     mainPageObjects.openPage()
             .clickOnSearchButton()
             .checkValidationMessage();
@@ -61,7 +61,7 @@ public class MainPageTests extends TestBase {
     @Tag("checkSupportButton")
     @Tag("MainPageTests")
     @DisplayName("Проверка срабатывания кнопки обратной связи")
-    void CheckContactButtonWorks() {
+    void checkContactButtonWorks() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
                 .checkSupportPageIsOpen();
@@ -71,7 +71,7 @@ public class MainPageTests extends TestBase {
     @Tag("checkContactWithoutLogin")
     @Tag("MainPageTests")
     @DisplayName("Проверка функционала отправления заявки на обратную связь без совершенного логина в систему")
-    void CheckContactPageWithoutLogin() {
+    void checkContactPageWithoutLogin() {
         mainPageObjects.openPage()
                 .clickOnSupportButton()
                 .checkSupportPageIsOpen()
@@ -83,7 +83,7 @@ public class MainPageTests extends TestBase {
     @Tag("checkRegistrationRedirect")
     @Tag("MainPageTests")
     @DisplayName("Проверка срабатывания кнопки регистрации")
-    void CheckThatRegistrationButtonRedirectToNewPage() {
+    void checkThatRegistrationButtonRedirectToNewPage() {
         mainPageObjects.openPage()
                 .clickOnRegistrationButton()
                 .checkRegistrationPageIsOpen();
@@ -93,7 +93,7 @@ public class MainPageTests extends TestBase {
     @Tag("checkSearchFromResult")
     @Tag("MainPageTests")
     @DisplayName("Проверка поиска нового места назначения со страницы с результатами для другого поиска")
-    void SimpleSearchFromResultPage() {
+    void simpleSearchFromResultPage() {
        mainPageObjects.openPage()
                .putTextToInputOnMainPage(destinationName)
                .clickOnSearchButton()
