@@ -3,6 +3,7 @@
 - [Стек проекта](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#%D1%81%D1%82%D0%B5%D0%BA-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 - [Текущее тестовое покрытие](https://github.com/Ir4fin/Ir4fin/tree/main#arrow_forward-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5)
 - [Запуск тестов](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#abacus-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2)
+- [Проект в Allure TestOps](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#keyboard-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%B2-allure-testops) 
 - [Пример Allure-отчёта по пройденным тестам](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#abacus-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2)
 - [Уведомления](https://github.com/Ir4fin/graduation_project_15_lesson/edit/main/README.md#telephone_receiver-%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)
 
@@ -86,9 +87,9 @@ ${TASK_NAME}
 
 Проект развернут также в Allure TestOps, что позволяет: отслеживать прогон тестов в реальном времени; автоматически добавлять тесты из прогона в тест-кейсы; адаптировать прогоны для того, чтобы их могли разбирать и запускать участники проекта, не связанные напрямую с автотестированием.
 
-![This is an image]((https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_9.jpg))
+![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_9.jpg)
 
-![This is an image]((https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_10.jpg))
+![This is an image](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/images/Screenshot_10.jpg)
 
 
 ## 📊 Пример Allure-отчета по пройденным тестам
