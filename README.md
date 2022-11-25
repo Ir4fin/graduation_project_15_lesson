@@ -2,7 +2,7 @@
 ## 📑 Содержание
 - [Стек проекта](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#%D1%81%D1%82%D0%B5%D0%BA-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0)
 - [Текущее тестовое покрытие](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#%EF%B8%8F-%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5)
-- [Запуск тестов](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#abacus-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2)
+- [Запуск тестов](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2)
 - [Проект в Allure TestOps](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#keyboard-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%B2-allure-testops) 
 - [Пример Allure отчёта по пройденным тестам](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#abacus-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2)
 - [Пример видео из Allure отчёта](https://github.com/Ir4fin/graduation_project_15_lesson/blob/main/README.md#clapper-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE-%D0%B8%D0%B7-allure-%D0%BE%D1%82%D1%87%D1%91%D1%82%D0%B0)
