@@ -2,6 +2,7 @@ package tests;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.SearchResultsPage;
@@ -17,6 +18,8 @@ public class SearchResultsPageTests extends TestBase {
 
 
     @Test
+    @Tag("SearchResultsPageTests")
+    @Tag("Second search from result page")
     @DisplayName("Проверка поиска нового места назначения со страницы с результатами для другого поиска")
     void simpleSearchFromResultPage() {
         String destinationName = faker.address().country();

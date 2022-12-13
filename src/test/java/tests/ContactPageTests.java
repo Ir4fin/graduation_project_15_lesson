@@ -12,7 +12,8 @@ public class ContactPageTests extends TestBase {
     ContactPage contactPage = new ContactPage();
 
     @Test
-    @Tag("ContactPageTests")
+    @Tag("contactPageTests")
+    @Tag("HelpCentreTest")
     @DisplayName("Проверка функционала отправления заявки на обратную связь без совершенного логина в систему")
     void checkContactPageWithoutLogin() {
 

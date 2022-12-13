@@ -21,6 +21,8 @@ public class MainPageTests extends TestBase {
 
 
     @Test
+    @Tag("MainPageTests")
+    @Tag("searchWithoutDates")
     @DisplayName("Поиск с главной страницы без заданных дат")
     void simpleSearchFromMainPage() {
         String destinationName = faker.address().country();
