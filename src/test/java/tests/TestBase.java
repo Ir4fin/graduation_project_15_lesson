@@ -1,6 +1,7 @@
 package tests;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -22,9 +23,9 @@ public class TestBase {
             capabilities.setCapability("enableVideo", true);
         }
 
-        Configuration.baseUrl = "https://booking.com/";
         Configuration.browserCapabilities = capabilities;
 
+        Configuration.baseUrl = System.getProperty("base_url", "https://booking.com/");
         Configuration.browser = System.getProperty("browser_name", "chrome");
         Configuration.browserVersion = System.getProperty("browser_version", "100");
         Configuration.browserSize = System.getProperty("browser_size", "1920x1080");
@@ -38,6 +39,7 @@ public class TestBase {
         if (System.getProperty("selenide.remote") != null) {
             Attach.addVideo();
         }
+        Selenide.closeWebDriver();
     }
 }
 

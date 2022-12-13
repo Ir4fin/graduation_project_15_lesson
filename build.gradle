@@ -29,9 +29,9 @@ dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.9.0',
             'io.qameta.allure:allure-selenide:2.20.0',
-            'com.codeborne:selenide:6.9.0',
+            'com.codeborne:selenide:6.10.1',
             'com.github.javafaker:javafaker:1.0.2',
-            'org.slf4j:slf4j-simple:2.0.3'
+            'org.slf4j:slf4j-simple:2.0.5'
     )
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 }
@@ -56,51 +56,27 @@ tasks.withType(Test) {
     }
 }
 
-task simpleSearch_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "simpleSearch"
-    }
-}
-
-task changeLanguage_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "changeLanguage"
-    }
-}
-
-task checkValidationError_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "checkValidationError"
-    }
-}
-
-task checkSupportButton_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "checkSupportButton"
-    }
-}
-
-task checkContactWithoutLogin_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "checkContactWithoutLogin"
-    }
-}
-
-task checkRegistrationRedirect_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "checkRegistrationRedirect"
-    }
-}
-
-task checkSearchFromResult_test(type: Test) {
-    useJUnitPlatform{
-        includeTags "checkSearchFromResult"
-    }
-}
-
 task MainPageTests_test(type: Test) {
-    useJUnitPlatform{
+    useJUnitPlatform {
         includeTags "MainPageTests"
+    }
+}
+
+task ContactPageTests_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "ContactPageTests"
+    }
+}
+
+task RegistrationPageTests_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "RegistrationPageTests"
+    }
+}
+
+task SearchResultsPageTests_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "SearchResultsPageTests"
     }
 }
 

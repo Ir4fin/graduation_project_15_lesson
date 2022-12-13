@@ -1,38 +1,35 @@
 package tests;
 
 import com.github.javafaker.Faker;
-import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pages.MainPageObjects;
+import pages.ContactPage;
+import pages.MainPage;
+import pages.SearchResultsPage;
 
 import java.util.Locale;
 
 public class MainPageTests extends TestBase {
 
-    MainPageObjects mainPageObjects = new MainPageObjects();
+    MainPage mainPage = new MainPage();
+    ContactPage contactPage = new ContactPage();
+
+    SearchResultsPage searchResultsPage = new SearchResultsPage();
     Faker faker = new Faker(new Locale("en"));
-    String destinationName,
-    newDestination;
-
-    @BeforeEach
-    void prepareTestData() {
-    destinationName = faker.address().country();
-    newDestination = faker.address().country();
-
-    }
 
 
-   @Test
-   @Tag("simpleSearch")
-   @Tag("MainPageTests")
-   @DisplayName("Поиск с главной страницы без заданных дат")
+    @Test
+    @DisplayName("Поиск с главной страницы без заданных дат")
     void simpleSearchFromMainPage() {
-        mainPageObjects.openPage()
+        String destinationName = faker.address().country();
+
+        mainPage.openPage()
                 .putTextToInputOnMainPage(destinationName)
-                .clickOnSearchButton()
-                .checkResult();
+                .clickOnSearchButton();
+
+        searchResultsPage.checkResultPageIsOpenAndHasContent();
     }
 
     @Test
@@ -40,7 +37,7 @@ public class MainPageTests extends TestBase {
     @Tag("MainPageTests")
     @DisplayName("Проверка функционала по смене языка")
     void changeLanguage() {
-        mainPageObjects.openPage()
+        mainPage.openPage()
                 .changeLanguageModalIsAppear()
                 .setAnotherLanguage("Deutsch")
                 .checkNewLanguageIsSet();
@@ -52,9 +49,9 @@ public class MainPageTests extends TestBase {
     @Tag("MainPageTests")
     @DisplayName("Проверка наличия ошибки валидации на форме ввода")
     void checkValidationIfInputIsEmpty() {
-    mainPageObjects.openPage()
-            .clickOnSearchButton()
-            .checkValidationMessage();
+        mainPage.openPage()
+                .clickOnSearchButton()
+                .checkValidationMessage();
     }
 
     @Test
@@ -62,44 +59,10 @@ public class MainPageTests extends TestBase {
     @Tag("MainPageTests")
     @DisplayName("Проверка срабатывания кнопки обратной связи")
     void checkContactButtonWorks() {
-        mainPageObjects.openPage()
-                .clickOnSupportButton()
-                .checkSupportPageIsOpen();
-    }
+        mainPage.openPage()
+                .clickOnSupportButton();
 
-    @Test
-    @Tag("checkContactWithoutLogin")
-    @Tag("MainPageTests")
-    @DisplayName("Проверка функционала отправления заявки на обратную связь без совершенного логина в систему")
-    void checkContactPageWithoutLogin() {
-        mainPageObjects.openPage()
-                .clickOnSupportButton()
-                .checkSupportPageIsOpen()
-                .clickOnContinueWithoutAnAccount()
-                .checkBookingDetailPageIsOpen();
-    }
-
-    @Test
-    @Tag("checkRegistrationRedirect")
-    @Tag("MainPageTests")
-    @DisplayName("Проверка срабатывания кнопки регистрации")
-    void checkThatRegistrationButtonRedirectToNewPage() {
-        mainPageObjects.openPage()
-                .clickOnRegistrationButton()
-                .checkRegistrationPageIsOpen();
-    }
-
-    @Test
-    @Tag("checkSearchFromResult")
-    @Tag("MainPageTests")
-    @DisplayName("Проверка поиска нового места назначения со страницы с результатами для другого поиска")
-    void simpleSearchFromResultPage() {
-       mainPageObjects.openPage()
-               .putTextToInputOnMainPage(destinationName)
-               .clickOnSearchButton()
-               .checkResult()
-               .putNewDestinationToInputOnResultPage(newDestination)
-               .checkResult();
+        contactPage.checkSupportPageIsOpen();
     }
 
 }
